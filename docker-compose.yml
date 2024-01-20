@@ -1,0 +1,19 @@
+#PiAlert | Genbyte | https://www.youtube.com/@genbyte
+#docker-compose.yml
+version: '3.3'
+
+services:
+  
+  pialert:
+    container_name: pialert
+    image: jokobsk/pi.alert:23 #Versión 16/12/23. Usa :latest para la última versión. 23 es de 16/12/2023 - Estable
+    volumes:
+      - ./config:/home/pi/pialert/config
+      #- RUTA-DE-DB-PIHOLE/pihole-FTL.db:/etc/pihole/pihole-FTL.db:ro #Si tienes Pi-Hole
+      - ./db/pialert.db:/home/pi/pialert/db/pialert.db
+    environment:
+      - TZ=Europe/Madrid
+    restart: unless-stopped
+    #ports: #Puedes usar mapeo de puertos, pero comenta la línea de network_mode: host
+    #- "8000:20211"#No puedes mapear puertos y tener host
+    network_mode: host
