@@ -18,3 +18,8 @@ docker rm pialert --force
 #Desplegar contenedor con "run" o bien con docker-compose <p>
 docker run -d --name=pialert --net=host -e TZ=Europe/Madrid -v ~/docker/pialert/db:/home/pi/pialert/db -v ~/docker/pialert/config/:/home/pi/pialert/config/ --restart=unless-stopped jokobsk/pi.alert
 
+<br>
+## Acceso vía web
+
+http://localhost:20211
+
