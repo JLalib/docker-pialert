@@ -1,5 +1,5 @@
-# docker-pialert
-docker-compose PiAlert | Detección "intrusos" en red WiFi y LAN
+# PiAlert | Detección "intrusos" en red WiFi y LAN
+docker-compose de PiAlert | Detección "intrusos" en red WiFi y LAN
 ## Pasos a seguir
 #PiAlert | Genbyte | https://www.youtube.com/@genbyte
 
