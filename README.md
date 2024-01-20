@@ -19,7 +19,8 @@ docker rm pialert --force
 docker run -d --name=pialert --net=host -e TZ=Europe/Madrid -v ~/docker/pialert/db:/home/pi/pialert/db -v ~/docker/pialert/config/:/home/pi/pialert/config/ --restart=unless-stopped jokobsk/pi.alert
 
 <br>
-## Acceso vía web
+## Acceso vía web<p>
 
-http://localhost:20211
+http://localhost:20211<p>
 
+![1_devices](https://github.com/JLalib/docker-pialert/assets/57844755/2d013f28-0031-4b1b-90ac-ddb162d150b3)
